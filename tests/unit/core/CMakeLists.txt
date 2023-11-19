@@ -7,6 +7,6 @@ target_sources(tictactics_utest
 target_link_libraries(tictactics_utest
   PUBLIC
     GTest::gtest_main
-    # tictactics_core
+    tictactics_core
 )
 target_include_directories(tictactics_utest PUBLIC ./)
