@@ -5,10 +5,6 @@ add_executable(
     tictactics.m.cpp
 )
 
-# add_library(tictactics_core)
-
-# add_subdirectory(core)
-
-# target_include_directories(tictactics_core PUBLIC ./)
-
-# target_link_libraries(tictactics PUBLIC tictactics_core)
+add_library(tictactics_core)
+add_subdirectory(core)
+target_link_libraries(tictactics PUBLIC tictactics_core)
