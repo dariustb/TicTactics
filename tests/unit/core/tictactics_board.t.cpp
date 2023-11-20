@@ -1,6 +1,5 @@
 #include <tictactics_board.h>
 #include <gtest/gtest.h>
-#include <iostream>
 
 TEST(TictacticsBoard, DefaultConstructorPopulatesDefaultValues) {
     // Given
