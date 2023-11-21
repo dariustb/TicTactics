@@ -14,6 +14,5 @@ int main() {
 
     GGame.play();
 
-
     return 0;
 }
