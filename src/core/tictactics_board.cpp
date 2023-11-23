@@ -31,14 +31,14 @@ int Board::height()
     return d_height;
 }
 
-int Board::resetBoard()
+RetCode Board::resetBoard()
 {
     d_board = "123456789";
 
     return e_SUCCESS;
 }
 
-int Board::printBoard()
+RetCode Board::printBoard()
 {
     cout <<
     "     |     |     \n"
@@ -55,7 +55,7 @@ int Board::printBoard()
     return e_SUCCESS;
 }
 
-int Board::updateBoard(Player player, int move_idx)
+RetCode Board::updateBoard(Player player, int move_idx)
 {
     d_board[move_idx] = player.piece();
     

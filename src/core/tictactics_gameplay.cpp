@@ -18,14 +18,14 @@ Board Game::getBoard()
     return d_Board;
 }
 
-int Game::addPlayer(Player player)
+RetCode Game::addPlayer(Player player)
 {
     d_Players.push_back(player);
 
     return e_SUCCESS;
 }
 
-int Game::play()
+RetCode Game::play()
 {
     const int max_turns = getBoard().height() * getBoard().width();
     int move_idx = -1;
