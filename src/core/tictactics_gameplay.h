@@ -6,6 +6,8 @@
 #include <tictactics_player.h>
 #include <vector>
 
+typedef int RetCode;
+
 class Game {
     public:
         Game();
@@ -13,8 +15,8 @@ class Game {
         std::vector<Player> Players();
         Board               getBoard();
 
-        int addPlayer(Player player);
-        int play();
+        RetCode addPlayer(Player player);
+        RetCode play();
         
     private:
         std::vector<Player> d_Players;

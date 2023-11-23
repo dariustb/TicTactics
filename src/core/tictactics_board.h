@@ -5,6 +5,8 @@
 #include <tictactics_player.h>
 #include <string>
 
+typedef int RetCode;
+
 class Board {
     public:
         Board();
@@ -13,9 +15,9 @@ class Board {
         int width();
         int height();
 
-        int resetBoard();
-        int printBoard();
-        int updateBoard(Player player, int move_idx);
+        RetCode resetBoard();
+        RetCode printBoard();
+        RetCode updateBoard(Player player, int move_idx);
 
         int  getPlayerMove(Player player);
         bool isMoveValid(const std::string& user_input);

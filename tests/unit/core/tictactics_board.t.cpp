@@ -34,7 +34,7 @@ TEST(TictacticsBoard, ResetBoardReturnsSuccess) {
     Board TBoard;
 
     // When
-    const int rcode = TBoard.resetBoard();
+    const RetCode rcode = TBoard.resetBoard();
 
     // Then
     ASSERT_EQ(0, rcode);
@@ -46,7 +46,7 @@ TEST(TictacticsBoard, PrintBoardReturnsSuccess) {
 
     // When
     ::testing::internal::CaptureStdout(); // Captures cout text
-    const int rcode = TBoard.printBoard();
+    const RetCode rcode = TBoard.printBoard();
     ::testing::internal::GetCapturedStdout();
 
     // Then
