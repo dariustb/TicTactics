@@ -1,4 +1,7 @@
 <!-- PROJECT SHIELDS -->
+[![Build][build]][build-url]
+[![Gtest][gtest]][gtest-url]
+![Repo Size][repo-size]
 
 <!-- PROJECT LOGO -->
 <br />
@@ -45,7 +48,7 @@ git clone https://github.com/dariustb/tictactics.git
 ```
 2. Compile and Run:
 ```sh
-g++ main.cpp -o tictactics
+g++ tictactics.m.cpp -o tictactics
 ./tictactics
 ```
 
@@ -59,7 +62,13 @@ g++ main.cpp -o tictactics
 [product-screenshot]:   #
 
 <!-- CI Test badges -->
+[build]:        https://github.com/dariustb/TicTactics/actions/workflows/build.yml/badge.svg
+[gtest]:        https://github.com/dariustb/TicTactics/actions/workflows/gtest.yml/badge.svg
+
+[build-url]:    https://github.com/dariustb/TicTactics/actions/workflows/build.yml
+[gtest-url]:    https://github.com/dariustb/TicTactics/actions/workflows/gtest.yml
 
 <!-- Markdown Badges -->
 [cpp.io]:       https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white
 [cmake.io]:     https://img.shields.io/badge/CMake-%23008FBA.svg?style=for-the-badge&logo=cmake&logoColor=white
+[repo-size]:    https://img.shields.io/github/repo-size/dariustb/TicTactics
